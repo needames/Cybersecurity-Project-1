@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [filebeat-playbook.yml] (Ansible/filebeat-playbook.yml)
+![filebeat-playbook.yml] (Ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -95,10 +95,9 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include webservers 10.0.1.7, 10.0.1.8, 10.0.1.9, 10.0.1.10
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-
 `$ ansible-playbook filebeat-playbook.yml`
-'''
+
+```
 ---
   - name: filebeat installer
     hosts: webservers
@@ -128,4 +127,4 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
   
     - name: filebeat -e
       shell: filebeat -e &
-      '''
+      ```
