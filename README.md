@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Diagram](/Users/ty/desktop/Cybersecurity-Project-1/ImagesDiagram.png)
+![Diagram](/Users/ty/Desktop/Cybersecurity-Project-1/Images/Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Sebp/Elk Running](/Users/ty/desktop/Cybersecurity-Project-1/Images/ELK.png)
+![Sebp/Elk Running](/Users/ty/Desktop/Cybersecurity-Project-1/Images/ELK.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -96,6 +96,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+`$ ansible-playbook filebeat-playbook.yml`
 '''
 ---
   - name: filebeat installer
